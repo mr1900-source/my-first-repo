@@ -1,0 +1,7 @@
+# this file works by mentioning the name of other files in the repo that we would like to ignore from being trapped in version control
+
+#clutter files
+__pycache__
+.pytest_cache
+
+# secret credentials
