@@ -1,7 +1,7 @@
 
 from pandas import DataFrame
 
-from app.stocks import fetch_stocks_data
+from app.stocks import fetch_stocks_csv
 
 
 def test_fetch_data():
