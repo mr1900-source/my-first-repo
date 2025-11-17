@@ -14,6 +14,7 @@ Install packages:
 
 ```sh
 # pip install pytest
+
 pip install -r requirements.txt
 ```
 
@@ -27,7 +28,11 @@ Create a local ".env" file and store your environment variable in there:
 ```sh
 # this is the ".env" file...
 
+
 ALPHAVANTAGE_API_KEY="______________"
+
+#also 
+FLASK_APP=web_app
 
 ## Usage
 
@@ -43,6 +48,23 @@ Run the stocks dashboard:
 
 ```sh
 python -m app.stocks
+```
+
+### Web App
+
+Run the web app (then view in the browser at http://localhost:5000/):
+
+```sh
+flask run
+
+# Mac OS:
+FLASK_APP=web_app flask run
+
+# Windows OS:
+# ... if `export` doesn't work for you, try `set` instead
+# ... or set FLASK_APP variable via ".env" file
+export FLASK_APP=web_app
+flask run
 ```
 
 ## Tests
