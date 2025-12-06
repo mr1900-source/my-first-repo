@@ -9,3 +9,6 @@ flask
 
 # testing:
 pytest
+
+# production server
+gunicorn
